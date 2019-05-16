@@ -1,0 +1,16 @@
+<doctype html>
+<title> Visits </title>
+<table border=1>
+<tr>
+    <th>Nr</th>
+    <th>Host</th>
+    <th>IP</th>
+</tr>
+{% for r in visits %}
+<tr>
+    <td>{{ r[0] }}</td>
+    <td>{{ r[1] }}</td>
+    <td>{{ r[2] }}</td>
+</tr>
+{% endfor %}
+</table>
