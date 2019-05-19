@@ -1,0 +1,14 @@
+<doctype html>
+<title> Env </title>
+<table border=1>
+<tr>
+    <th>Key</th>
+    <th>Value</th>
+</tr>
+{% for r in req %}
+<tr>
+    <td>{{ r }}</td>
+    <td>{{ req[r] }}</td>
+</tr>
+{% endfor %}
+</table>
